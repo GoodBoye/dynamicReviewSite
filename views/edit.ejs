@@ -1,0 +1,13 @@
+<% include partials/header %>
+<h1>Edit the article below</h1>
+<form class="form" id="editForm" action="/add/edit/submit" method="post">
+  <input type="hidden" name="_id" value="<%=article._id%>"><br>
+  <input class="form-control mr-sm-2" type="text" name="name" value="<%=article.name%>"><br>
+  <input class="form-control mr-sm-2" type="text" name="category" value="<%=article.category%>"><br>
+  <input class="form-control mr-sm-2" type="text" name="rating" value="<%=article.rating%>"><br>
+  <textarea class="form-control articleContentInput" type="text" name="content" ><%=article.content%></textarea><br>
+  <input class="form-control mr-sm-6" type="text" name="image" value="<%=article.image%>"><br>
+  <input class="form-control mr-sm-1" type="submit" text="Submit"><br>
+</form>
+
+<% include partials/footer %>

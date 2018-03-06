@@ -1,0 +1,16 @@
+done: Design footer
+TODO: Add page to add data to DB
+TODO: Add page to edit/delete DB records.
+//done: display stars
+TODO: Neatly display records
+TODO: Filter records by category (also in edit page)
+TODO: /articles/add Clear fields / redirect on submition of form
+TODO: /articles/edit add delete function to link
+TODO: /articles/edit add edit function to link
+TODO: filter records by category in ejs
+
+
+>add image/category model to mongodb
+>add item image to item model in mongodb
+>add images to products and front page
+>enlarge text boxes where appropriate

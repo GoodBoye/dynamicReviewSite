@@ -1,0 +1,11 @@
+<% include partials/header %>
+  <h1><%= title %></h1>
+<form class="form" id="newArtForm" action="/add/article/submit" method="post">
+  <input class="form-control mr-sm-2" type="text" name="name" placeholder="Item name" aria-label="Item name"><br>
+  <input class="form-control mr-sm-2" type="text" name="category" placeholder="Category" aria-label="Category"><br>
+  <input class="form-control mr-sm-2" type="text" name="rating" placeholder="Rating (1-5)" aria-label="Rating"><br>
+  <textarea class="form-control articleContentInput" type="text" name="content" placeholder="Content" aria-label="Content"></textarea><br>
+  <input class="form-control mr-sm-6" type="text" name="image"><br>
+  <input class="form-control mr-sm-1" type="submit" text="Submit"><br>
+</form>
+<% include partials/footer %>

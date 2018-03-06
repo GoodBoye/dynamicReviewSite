@@ -1,0 +1,26 @@
+<% include partials/header %>
+  <h1><%= title %></h1>
+  <ul class="reviewList">
+    <% reviews.forEach(function(review){ %>
+        <%if(review.category == category) { %>
+            <li>
+              <div class="containerdiv">
+                <div>
+                <img class="fullstar" src="/stars_blank.png" alt="img">
+                </div>
+                <div class="cornerimage" style="width:<%= (100/5)*review.rating %>%;">
+                <img class="fullstar" src="/stars_full.png" alt="">
+                </div>
+              </div></br>
+              <div class="itemDetails">
+                <img src="/images/articleimages/<%=review.image%>" alt="image of <%=review.image%>"><br>
+                Name: <%=review.name%></br>
+                Content: <%=review.content%></br>
+                Category: <%=review.category%>
+              </div>
+
+            </li>
+      <%}%>
+    <%}); %>
+  </ul>
+<% include partials/footer %>

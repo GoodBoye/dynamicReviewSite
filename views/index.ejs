@@ -1,0 +1,13 @@
+<% include partials/header %>
+  <h1><%= title %></h1>
+  <div class="flex-container">
+    <% categoryList.forEach(function(cat){ %>
+        <div class="categoryListItem">
+          <a href="/articles/<%=cat.name%>">
+            <img class="panelImg" src="/images/articleimages/<%=cat.image%>" alt="Picture of <%=cat.name%>">
+            <h1><%=cat.name%></h1>
+          </a>
+        </div>
+    <%}); %>
+  </div>
+<% include partials/footer %>

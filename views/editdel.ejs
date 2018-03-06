@@ -1,0 +1,22 @@
+<% include partials/header %>
+  <h1><%= title %></h1>
+  <ul class="reviewList">
+    <% reviews.forEach(function(review){ %>
+            <li>
+              <div class="containerdiv">
+                <div>
+                <img class="fullstar" src="/stars_blank.png" alt="img">
+                </div>
+                <div class="cornerimage" style="width:<%= (100/5)*review.rating %>%;">
+                <img class="fullstar" src="/stars_full.png" alt="">
+                </div>
+              </div></br>
+              Name: <%=review.name%></br>
+              Content: <%=review.content%></br>
+              Category: <%=review.category%></br>
+              <a href="/articles/edit/<%=review._id%>">Edit</a>
+              <a href="/articles/delete/<%=review._id%>">Delete</a>
+            </li>
+    <%}); %>
+  </ul>
+<% include partials/footer %>
